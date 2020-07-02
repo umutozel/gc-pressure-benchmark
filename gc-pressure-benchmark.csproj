@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.12.0" />
+    <PackageReference Include="BenchmarkDotNet.Diagnostics.Windows" Version="0.12.0" Condition="'$(OS)' == 'Windows_NT'" />
+    <PackageReference Include="System.Memory" Version="4.5.4" />
+  </ItemGroup>
+</Project>
